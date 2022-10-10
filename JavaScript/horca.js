@@ -76,7 +76,7 @@ function agregarPalabra() {
   document.getElementById("iniciar-juego").style.display= "none";
   document.getElementById("nueva-palabra").style.display= "none";
   document.getElementById("agregarPalabra").style.display= "flex";
-  
+
 }
 
 function cancelar() {
