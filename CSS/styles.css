@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    background: #F3F5FC;
+}
+
+.logo {
+    position: absolute;
+    left: 50px;
+    right: 37.43%;
+    top: 50px;
+    bottom: 0%;
+    width: 50px;
+    height:50px;
+}
+
+.botones-home {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-iniciar {
+    width: 317px;
+    height: 105px;
+    background: #0A3871;
+    border-radius: 24px;
+    color: #fff;
+    border: none;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn-nueva {
+    width: 280px;
+    height: 67px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    font-size: 1rem;
+}
+
+.canvas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#horca {
+    display: none;
+    justify-content: center;
+    min-height: 450px;
+    min-width: 375px;
+    max-width: 600px;
+}
+
+#div-aparece {
+    display: none;
+}
+
+.botones-juego {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 150px;
+    margin-left: 10px;
+}
+
+.btn-nuevo {
+    width: 343px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    border: none;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.btn-desistir {
+    width: 343px;
+    height: 67px;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    margin-right: 20px;
+}
+
+#ahorcado {
+    display: none;
+    position: fixed;
+    top: 75px;
+    width: 165px;
+}
+
+.vertical {
+    height: 250px;
+}
+
+.horizontal {
+    display: flex;
+    position: fixed;
+}
+
+.vertical2 {
+    position: absolute;
+    left: 170px;
+    height: 40px;
+}
+
+.cabeza {
+    position: absolute;
+    top: 35px;
+    height: 50px;
+    left: 146px;
+}
+
+.cuerpo {
+    position: absolute;
+    left: 170px;
+    top: 81px;
+    height: 93px;
+}
+
+.brazo1 {
+    position: absolute;
+    top: 83px;
+    left: 143px;
+    height: 50px;
+}
+
+.brazo2 {
+    position: absolute;
+    top: 83px;
+    left: 171px;
+    height: 50px;
+}
+
+.pierna1 {
+    height: 50px;
+    position: absolute;
+    top: 171px;
+    left: 143px;
+}
+
+.pierna2 {
+    height: 50px;
+    position: absolute;
+    top: 171px;
+    left: 170px;
+}
+
+#perdio {
+    display: none;
+    color: red;
+    font-size: 1.4rem;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    left: 11px;
+}
+
+#gano {
+    display: none;
+    color: rgb(6, 247, 58);
+    font-size: 1.4rem;
+    font-weight: bold;
+    position: absolute;
+    text-align: center;
+    left: 11px;
+}
+
+#inputCel {
+    display: none;
+    outline: none;
+    border: none;
+    position: absolute;
+    width: 360px;
+    height: 5px;
+    top: 395px;
+    caret-color:#071a5f;
+    background-color: #F3F5FC;
+    color: #F3F5FC;
+}
+
+.agregarPalabra {
+    display: none;
+    position: absolute;
+    top: 160px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#agregar {
+    font-size: 26px;
+    border: none;
+    resize: none;
+    background-color: #F3F5FC;
+    font-family: monospace;
+    outline: none;
+    color: #0A3871;
+    margin-bottom: 100px;
+    
+}
+#agregar::placeholder {
+    color: #0A3871;
+}
+
+.btnAlerta {
+    display: contents;
+}
+
+.alerta {
+    width: 350px;
+    margin-bottom: 20px;
+}
+
+.botones-agregar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
+
+.btn-agregar {
+    width: 343px;
+    height: 67px;
+    background: #0A3871;
+    border-radius: 24px;
+    border: none;
+    color: #fff;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}
+
+.btn-cancelar {
+    width: 343px;
+    height: 67px;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    color: #0A3871;
+    margin-right: 20px;
+    margin-bottom: 5px;
+}

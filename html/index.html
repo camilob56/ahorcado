@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ahorcado</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/CSS/styles.css" />
+  </head>
+
+  <body>
+    <img src="/img/Vector.svg" class="logo" />
+    <div id="div-desaparece" class="botones-home">
+      <a href="#horca">
+        <button class="btn-iniciar" type="submit" id="iniciar-juego" onclick="iniciarJuego()">Iniciar Juego</button>
+      </a>
+      <a href="#horca">
+        <button class="btn-nueva" type="submit" id="nueva-palabra" onclick="agregarPalabra()">Agregar nueva palabra</button>
+      </a>
+
+      <div id="agregarPalabra" class="agregarPalabra">
+        <textarea id="agregar" type="text" placeholder="   Ingrese una palabra" cols="24" rows="5"></textarea>
+        <div class="btnAlerta">
+          <div class="alerta">
+            <img src="/img/alerta.svg" alt="alerta" />
+            <span>Máx. de 8 letras</span>
+          </div>
+          <div id="div-palabra" class="botones-agregar">
+            <a href="#horca">
+              <button class="btn-agregar" type="submit" id="nueva-palabra" onclick="nuevoJuego()">Guardar y empezar</button>
+            </a>
+            <a href="#horca">
+              <button class="btn-cancelar" type="submit" id="cancelar" onclick="cancelar()">Cancelar</button>
+            </a>
+          </div> 
+        </div>
+      </div>
+
+    </div>
+
+    <div id="div-aparece-ahorcado" class="canvas">
+      <canvas id="horca" width="1100" height="860"></canvas>
+      <div id="ahorcado">
+        <img src="/img/1.svg" id="vertical" class="vertical" alt="primer parte">
+        <img src="/img/2.svg" id="horizontal" class="horizontal" alt="segunda parte">
+        <img src="/img/3.svg" id="vertical2" class="vertical2" alt="tercer parte">
+        <img src="/img/4.svg" id="cabeza" class="cabeza" alt="cuarta parte">
+        <img src="/img/5.svg" id="cuerpo" class="cuerpo" alt="quinta parte">
+        <img src="/img/6.svg" id="brazo1" class="brazo1" alt="sexta parte">
+        <img src="/img/7.svg" id="brazo2" class="brazo2" alt="septima parte">
+        <img src="/img/8.svg" id="pierna1" class="pierna1" alt="octava parte">
+        <img src="/img/9.svg" id="pierna2" class="pierna2" alt="novena parte">
+        <p id="perdio">Fin del juego! <br> Has perdido</p>
+        <p id="gano">Felicidades! <br> Has ganado</p>
+        
+      </div>  
+      <input id="inputCel" type="text" autofocus/>   
+    </div>
+    
+    <div id="div-aparece" class="botones-juego">
+      <a href="#horca">
+        <button class="btn-nuevo" type="submit" id="nuevo-juego" onclick="nuevoJuego()">Nuevo Juego</button>
+      </a>
+      <a href="#horca">
+        <button class="btn-desistir" type="submit" id="desistir" onclick="desistir()">Desistir</button>
+      </a>
+    </div>
+    
+    
+
+
+
+    <script src="/JavaScript/horca.js"></script>
+    <script src="/JavaScript/canvas.js"></script>
+
+  </body>
+
+</html>
